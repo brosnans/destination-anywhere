@@ -1,0 +1,13 @@
+#breakpoint-tracker:before {
+    content: 'xs';
+
+    @include mobile-sm {
+        content: 'sm';
+    }
+    @include tablet {
+        content: 'md';
+    }
+    @include desktop {
+        content: 'lg';
+    }
+}

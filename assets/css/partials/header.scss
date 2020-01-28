@@ -1,0 +1,75 @@
+.header {
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .navbar {
+        height: 12%;
+    }
+
+    .navbar-text {
+        margin-bottom: 0;
+        padding-top: 0.25rem;
+        padding-bottom: 0;
+    }
+
+    .back-icon {
+        position: fixed;
+        left: 10px;
+        color: white;
+        font-size: 1.2rem;
+        width: 25px;
+        height: 25px;
+    }
+
+    .back-icon:hover {
+        cursor: pointer;
+    }
+
+    .navbar .form-control {
+        width: 80%;
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+        padding: .1rem .75rem;
+        text-align: center;
+    }
+
+    .city-search {
+        font-family: 'Open Sans', 'FontAwesome';
+    }
+
+    @include tablet {
+        .navbar .form-control {
+            width: 40%;
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+            padding: .2rem .75rem;
+            text-align: center;
+        }
+
+        .navbar-text {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+
+    @include desktop {
+        height: 15%;
+        background-color: darkslategray;
+        width: 33.333334%;
+        left: 50%;
+        transform: translate(-50.1%, 0);
+        z-index: 1000;
+
+        .container-fluid.navbar-wrapper {
+            height: 100%;
+        }
+
+        .navbar {
+            height: 100%;
+        }
+    }
+}

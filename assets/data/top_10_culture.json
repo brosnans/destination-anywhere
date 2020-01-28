@@ -1,0 +1,106 @@
+[
+    {
+        "rank": 1,
+        "name": "London",
+        "country": "GB",
+        "featureCode": "PPLC",
+        "adminCode": "ENG",
+        "population": 7556900,
+        "lat": 51.50853,
+        "lon": -0.12574
+    },
+    {
+        "rank": 2,
+        "name": "Vārānasi",
+        "country": "IN",
+        "featureCode": "PPL",
+        "adminCode": "36",
+        "population": 1164404,
+        "lat": 25.31668,
+        "lon": 83.01042
+    },
+    {
+        "rank": 3,
+        "name": "Shanghai",
+        "country": "CN",
+        "featureCode": "PPLA",
+        "adminCode": "23",
+        "population": 14608512,
+        "lat": 31.22222,
+        "lon": 121.45806
+    },
+    {
+        "rank": 4,
+        "name": "Granada",
+        "country": "ES",
+        "featureCode": "PPLA2",
+        "adminCode": "51",
+        "population": 234325,
+        "lat": 37.18817,
+        "lon": -3.60667,
+        "muni": "18087"
+    },
+    {
+        "rank": 5,
+        "name": "Rome",
+        "country": "IT",
+        "featureCode": "PPLC",
+        "adminCode": "07",
+        "population": 2563241,
+        "lat": 41.89474,
+        "lon": 12.4839,
+        "muni": "058091"
+    },
+    {
+        "rank": 6,
+        "name": "Kyoto",
+        "country": "JP",
+        "featureCode": "PPLA",
+        "adminCode": "22",
+        "population": 1459640,
+        "lat": 35.02107,
+        "lon": 135.75385
+    },
+    {
+        "rank": 7,
+        "name": "Eşfahān",
+        "country": "IR",
+        "featureCode": "PPLA",
+        "adminCode": "28",
+        "population": 1547164,
+        "lat": 32.65722,
+        "lon": 51.67761
+    },
+    {
+        "rank": 8,
+        "name": "New York City",
+        "country": "US",
+        "featureCode": "PPL",
+        "adminCode": "NY",
+        "population": 8175133,
+        "lat": 40.71427,
+        "lon": -74.00597
+    },
+    {
+        "rank": 9,
+        "name": "İstanbul",
+        "country": "TR",
+        "featureCode": "PPLA",
+        "adminCode": "34",
+        "population": 11174257,
+        "lat": 41.01384,
+        "lon": 28.94966
+    },
+    {
+        "rank": 10,
+        "name": "Paris",
+        "country": "FR",
+        "featureCode": "PPLC",
+        "adminCode": "A8",
+        "population": 2138551,
+        "lat": 48.85341,
+        "lon": 2.3488,
+        "muni": "751",
+        "muniSub": "75056"
+    }
+]

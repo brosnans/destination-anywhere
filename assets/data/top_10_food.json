@@ -1,0 +1,109 @@
+[
+    {
+        "rank": 1,
+        "name": "Donostia / San Sebastián",
+        "country": "ES",
+        "featureCode": "PPLA2",
+        "adminCode": "59",
+        "population": 185357,
+        "lat": 43.31283,
+        "lon": -1.97499,
+        "muni": "20069"
+    },
+    {
+        "rank": 2,
+        "name": "Tokyo",
+        "country": "JP",
+        "featureCode": "PPLC",
+        "adminCode": "40",
+        "population": 8336599,
+        "lat": 35.6895,
+        "lon": 139.69171
+    },
+    {
+        "rank": 3,
+        "name": "New York City",
+        "country": "US",
+        "featureCode": "PPL",
+        "adminCode": "NY",
+        "population": 8175133,
+        "lat": 40.71427,
+        "lon": -74.00597
+    },
+    {
+        "rank": 4,
+        "name": "Barcelona",
+        "country": "ES",
+        "featureCode": "PPLA",
+        "adminCode": "56",
+        "population": 1621537,
+        "lat": 41.38879,
+        "lon": 2.15899,
+        "muni": "08019"
+    },
+    {
+        "rank": 5,
+        "name": "Singapore",
+        "country": "SG",
+        "featureCode": "PPLC",
+        "adminCode": "00",
+        "population": 3547809,
+        "lat": 1.28967,
+        "lon": 103.85007
+    },
+    {
+        "rank": 6,
+        "name": "Paris",
+        "country": "FR",
+        "featureCode": "PPLC",
+        "adminCode": "A8",
+        "population": 2138551,
+        "lat": 48.85341,
+        "lon": 2.3488,
+        "muni": "751",
+        "muniSub": "75056"
+    },
+    {
+        "rank": 7,
+        "name": "Madrid",
+        "country": "ES",
+        "featureCode": "PPLC",
+        "adminCode": "29",
+        "population": 3255944,
+        "lat": 40.4165,
+        "lon": -3.70256,
+        "muni": "28079"
+    },
+    {
+        "rank": 8,
+        "name": "Lima",
+        "country": "PE",
+        "featureCode": "PPLC",
+        "adminCode": "LMA",
+        "population": 7737002,
+        "lat": -12.04318,
+        "lon": -77.02824
+    },
+    {
+        "rank": 9,
+        "name": "London",
+        "country": "GB",
+        "featureCode": "PPLC",
+        "adminCode": "ENG",
+        "population": 7556900,
+        "lat": 51.50853,
+        "lon": -0.12574
+    },
+    {
+        "rank": 10,
+        "name": "München",
+        "country": "DE",
+        "featureCode": "PPLA",
+        "adminCode": "02",
+        "population": 1260391,
+        "lat": 48.13743,
+        "lon": 11.57549,
+        "muni": "09162",
+        "muniSub": "09162000"
+    }
+]

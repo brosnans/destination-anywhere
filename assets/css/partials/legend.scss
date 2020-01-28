@@ -1,0 +1,80 @@
+/*-----------------------------------Legend*/
+
+.legend {
+    padding-top: 0.25rem;
+
+    .legend-item {
+        padding-left: 20px;
+    }
+
+    .legend-btn:focus {
+        box-shadow: none;
+    }
+
+    .legend-btn-attractions {
+        @include legendButton($attractions);
+    }
+
+    .legend-btn-accommodation {
+        @include legendButton($accommodation);
+    }
+
+    .legend-btn-restaurants {
+        @include legendButton($restaurants);
+    }
+
+    .btn i {
+        font-size: 11px;
+        position: relative;
+        top: -7px;
+    }
+
+    .legend-label {
+        font-size: 11px;
+    }
+
+    @include mobile-sm {
+        .legend-item {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+
+    @include tablet {
+        position: fixed;
+        top: 7%;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+
+        .legend-item {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+
+    @include desktop {
+        position: static;
+        height: 100%;
+
+        .container-fluid {
+            height: 100%;
+        }
+
+        .row {
+            height: 100%;
+            align-items: center;
+        }
+
+        .legend-item {
+            padding-left: 0;
+            text-align: center;
+            .legend-label {
+                font-size: 14px;
+            }
+        }
+
+    }
+}

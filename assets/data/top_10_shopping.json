@@ -1,0 +1,106 @@
+[
+    {
+        "rank": 1,
+        "name": "New York City",
+        "country": "US",
+        "featureCode": "PPL",
+        "adminCode": "NY",
+        "population": 8175133,
+        "lat": 40.71427,
+        "lon": -74.00597
+    },
+    {
+        "rank": 2,
+        "name": "Tokyo",
+        "country": "JP",
+        "featureCode": "PPLC",
+        "adminCode": "40",
+        "population": 8336599,
+        "lat": 35.6895,
+        "lon": 139.69171
+    },
+    {
+        "rank": 3,
+        "name": "London",
+        "country": "GB",
+        "featureCode": "PPLC",
+        "adminCode": "ENG",
+        "population": 7556900,
+        "lat": 51.50853,
+        "lon": -0.12574
+    },
+    {
+        "rank": 4,
+        "name": "Kuala Lumpur",
+        "country": "MY",
+        "featureCode": "PPLC",
+        "adminCode": "14",
+        "population": 1453975,
+        "lat": 3.1412,
+        "lon": 101.68653
+    },
+    {
+        "rank": 5,
+        "name": "Paris",
+        "country": "FR",
+        "featureCode": "PPLC",
+        "adminCode": "A8",
+        "population": 2138551,
+        "lat": 48.85341,
+        "lon": 2.3488,
+        "muni": "751",
+        "muniSub": "75056"
+    },
+    {
+        "rank": 6,
+        "name": "Hong Kong",
+        "country": "HK",
+        "featureCode": "PPLC",
+        "adminCode": "00",
+        "population": 7012738,
+        "lat": 22.28552,
+        "lon": 114.15769
+    },
+    {
+        "rank": 7,
+        "name": "Buenos Aires",
+        "country": "AR",
+        "featureCode": "PPLC",
+        "adminCode": "07",
+        "population": 13076300,
+        "lat": -34.61315,
+        "lon": -58.37723
+    },
+    {
+        "rank": 8,
+        "name": "Vienna",
+        "country": "AT",
+        "featureCode": "PPLC",
+        "adminCode": "09",
+        "population": 1691468,
+        "lat": 48.20849,
+        "lon": 16.37208,
+        "muni": "901"
+    },
+    {
+        "rank": 9,
+        "name": "Dubai",
+        "country": "AE",
+        "featureCode": "PPLA",
+        "adminCode": "03",
+        "population": 1137347,
+        "lat": 25.25817,
+        "lon": 55.30472
+    },
+    {
+        "rank": 10,
+        "name": "Madrid",
+        "country": "ES",
+        "featureCode": "PPLC",
+        "adminCode": "29",
+        "population": 3255944,
+        "lat": 40.4165,
+        "lon": -3.70256,
+        "muni": "28079"
+    }
+]

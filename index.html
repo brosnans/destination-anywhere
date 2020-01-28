@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destination Anywhere</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/animate.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <!-- site-wrapper -->
+    <div class="container-fluid site-wrapper full-vh px-0">
+
+        <!-- header -->
+        <header class="header d-none">
+            <div class="container-fluid navbar-wrapper">
+                <nav class="navbar fixed-top navbar-dark bg-dark text-center">
+                    <i class="back-icon fa fa-chevron-left"></i>
+                    <a class="w-100 logo" href="#">
+                        <img src="assets/images/logo.svg" height="18" alt="logo">
+                    </a>
+                    <form class="search-form form-inline w-100 pt-2">
+                        <input id="citySearch" class="city-search form-control mx-auto text-uppercase" type="search" placeholder="&#xF002; find a city"
+                            aria-label="Search">
+                    </form>
+                    <h4 class="city-name navbar-text mx-auto d-none">Paris</h4>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- HOME -->
+        <section id="home" class="home bg-color-home">
+            <div class="container-fluid full-vh px-0">
+                <div class="logo">
+                    <img src="assets/images/logo.svg" height="20" alt="logo">
+                </div>
+                <div class="row no-gutters h-100">
+                    <div class="col-12 d-md-none">
+                        <a href="#explore" class="btn-home-explore d-block h-100">
+                            <span class="overlay d-inline-block h-100 w-100 align-middle"></span>
+                            <span class="d-inline-block position-relative align-middle">explore</span>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="#navigate" class="btn-home-navigate d-block h-100">
+                            <span class="overlay d-inline-block h-100 w-100 align-middle"></span>
+                            <span class="d-md-none d-inline-block position-relative align-middle">navigate</span>
+                            <span class="home-enter d-none d-md-inline-block">click to enter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /HOME -->
+
+        <!-- EXPLORE -->
+        <section id="explore" class="explore bg-color-explore d-none">
+            <div class="container-fluid h-100 px-0">
+                <div class="row no-gutters h-100">
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <a href="#navigate" class="button-explore-cities d-block h-100">
+                            <span class="d-inline-block h-100 align-middle"></span>
+                            <span class="d-inline-block align-middle">all cities</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <a href="#navigate" class="button-explore-culture d-block h-100">
+                            <span class="d-inline-block h-100 align-middle"></span>
+                            <span class="d-inline-block align-middle">top 10 culture</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 offset-lg-4">
+                        <a href="#navigate" class="button-explore-food d-block h-100">
+                            <span class="d-inline-block h-100 align-middle"></span>
+                            <span class="d-inline-block align-middle">top 10 food</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <a href="#navigate" class="button-explore-shopping d-block h-100">
+                            <span class="d-inline-block h-100 align-middle"></span>
+                            <span class="d-inline-block align-middle">top 10 shopping</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /EXPLORE -->
+
+        <!-- NAVIGATE -->
+        <section id="navigate" class="navigate h-100 d-none">
+            <div class="container-fluid h-100 px-0">
+                <div class="row h-100 no-gutters">
+                    <div class="col h-100">
+                        <div id="map" class="map h-100 bg-info">
+                            <h4 class="text-center mt-5 pt-5 map-marker-city">city marker</h4>
+                            <h4 class="text-center mt-5 map-marker-venue">venue marker</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /NAVIGATE -->
+
+        <!-- DISCOVER -->
+        <section id="discover" class="discover fixed-bottom d-none">
+            <!-- legend -->
+            <div class="legend bg-dark text-light">
+                <div class="container-fluid px-0">
+                    <div class="row no-gutters pb-1">
+                        <div class="col-12 col-sm legend-item">
+                            <button type="button" class="btn legend-btn legend-btn-attractions">
+                                <i class="fa fa-check"></i>
+                            </button>
+                            <span class="legend-label">Attractions</span>
+                        </div>
+                        <div class="col-12 col-sm legend-item">
+                            <button type="button" class="btn legend-btn legend-btn-accommodation">
+                                <i class="fa fa-check"></i>
+                            </button>
+                            <span class="legend-label">Accommodation</span>
+                        </div>
+                        <div class="col-12 col-sm legend-item">
+                            <button type="button" class="btn legend-btn legend-btn-restaurants">
+                                <i class="fa fa-check"></i>
+                            </button>
+                            <span class="legend-label">Restaurants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /legend -->
+
+            <!-- venue-list -->
+            <div class="venue-lists container-fluid d-none d-sm-block">
+                <div class="row venue-list-attractions">
+                    <div class="col-12 venue-list-header">
+                        <h4>
+                            <a data-toggle="collapse" href="#collapse_attractions" aria-expanded="true">attractions</a>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="collapse show" id="collapse_attractions">
+                        <div class="col-12 venue-list">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row venue-list-accommodation">
+                    <div class="col-12 venue-list-header">
+                        <h4>
+                            <a data-toggle="collapse" href="#collapse_accommodation" aria-expanded="true">accommodation</a>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="collapse show" id="collapse_accommodation">
+                        <div class="col-12 venue-list">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row venue-list-restaurants">
+                    <div class="col-12 venue-list-header">
+                        <h4>
+                            <a data-toggle="collapse" href="#collapse_restaurants" aria-expanded="true">bars & restaurants</a>
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="collapse show" id="collapse_restaurants">
+                        <div class="col-12 venue-list">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- \venue-list -->
+
+            <!-- venue -->
+            <div id="venue" class="venue bg-light d-none d-sm-none">
+                <div class="container-fluid px-0">
+                    <div class="row no-gutters d-flex align-items-stretch">
+                        <!-- venue-image -->
+                        <div class="col venue-image"></div>
+                        <!-- /venue-image -->
+                        <!-- venue-info -->
+                        <div class="col venue-info p-2">
+                            <i class="close-icon fa fa-times"></i>
+                            <p class="venue-name">
+                            </p>
+                            <p class="venue-type small"></p>
+                            <p class="rating small">
+                                <span class="score"></span>
+                                <span class="stars">
+
+                                </span>
+                            </p>
+                            <!-- address -->
+                            <div class="row no-gutters address">
+                                <div class="col-2 text-center pr-2">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="icon-info d-inline-block venue-address small"></p>
+                                </div>
+                            </div>
+                            <!-- website -->
+                            <div class="row no-gutters website">
+                                <div class="col-2 text-center pr-2">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="icon-info d-inline-block venue-website small">
+                                        <a href="#"></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- phone -->
+                            <div class="row no-gutters phone">
+                                <div class="col-2 text-center pr-2">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="icon-info d-inline-block venue-phone small"></p>
+                                </div>
+                            </div>
+                            <!-- opening-hours -->
+                            <div class="row no-gutters opening-hours">
+                                <div class="col-2 text-center pr-2">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="icon-info d-inline-block venue-opening-hours small"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /venue-info -->
+                    </div>
+                </div>
+            </div>
+            <!-- /venue -->
+        </section>
+        <!-- /DISCOVER -->
+    </div>
+    <!-- /site-wrapper -->
+
+    <!-- venue modal -->
+    <div class="modal fade venue-modal" id="venueModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters">
+                            <div class="col venue-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /modal-header -->
+                <div class="modal-body">
+                    <div class="container-fluid px-2">
+                        <div class="row no-gutters d-flex align-items-stretch">
+                            <!-- venue-info -->
+                            <div class="col venue-info p-2">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <p class="venue-name"></p>
+                                <p class="venue-type small"></p>
+                                <p class="rating small">
+                                    <span class="score"></span>
+                                    <span class="stars">
+                                    </span>
+                                </p>
+                                <!-- address -->
+                                <div class="row no-gutters address">
+                                    <div class="col-2 text-center pr-2">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="icon-info d-inline-block venue-address small"></p>
+                                    </div>
+                                </div>
+                                <!-- website -->
+                                <div class="row no-gutters website">
+                                    <div class="col-2 text-center pr-2">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="icon-info d-inline-block venue-website small">
+                                            <a href="#" target="_blank"></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- phone -->
+                                <div class="row no-gutters phone">
+                                    <div class="col-2 text-center pr-2">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="icon-info d-inline-block venue-phone small"></p>
+                                    </div>
+                                </div>
+                                <!-- opening-hours -->
+                                <div class="row no-gutters opening-hours">
+                                    <div class="col-2 text-center pr-2">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="icon-info d-inline-block venue-opening-hours small"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /venue-info -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /modal-body -->
+        </div>
+    </div>
+    <!-- /venue modal -->
+
+    <!-- Current breakpoint helper -->
+    <div id="breakpoint-tracker" class="d-none"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
+    <script src="assets/js/router.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/animate.js"></script>
+
+    <!-- Google Maps API -->
+    <script src="assets/js/markerclusterer.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeSdxbyE4ybSD4H0xNgCL6DcjMmz4ElRQ&callback=initMap&libraries=places"
+        async defer></script>
+</body>
+
+</html>
